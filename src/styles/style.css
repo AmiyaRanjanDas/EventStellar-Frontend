@@ -1,0 +1,265 @@
+/* =================footer================= */
+#footer a{
+    text-decoration: none;
+    color: black;
+}
+
+/* ===================service card============== */
+.service-card{
+    position: relative;
+    border: 0.5px solid #0d6dfd37;
+    border-right: 0px;
+    padding: 40px 20px;
+    margin: 0;
+}
+.service-card img{
+    height: 80px;
+    padding-bottom: 20px;
+}
+.services>div:last-child{
+    border-right: 0.5px solid #0d6dfd37;
+}
+@media (max-width: 768px) {
+    .service-card{
+        border-bottom: 0px;
+    }
+    .services>div:last-child{
+        border-bottom: 0.5px solid #0d6dfd37;
+    }
+}
+.service-card::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background: #0d6efd;
+    transition: 1s ease-in-out;
+}
+.service-card:hover::after {    
+    width: 100%;
+}
+.service-card button{
+    border-radius: 50%;
+    color: white;
+    border: none;
+    background: rgb(66, 66, 66);
+    font-size: 11px;
+    padding: 4px 7px 6px 7px;
+    margin-left: 10px;
+    transition: 0.5s ease-in-out;
+}
+.service-card:hover button{   
+    transform: scale(1.5);
+    background: #0d6efd;    
+}
+
+
+
+/* ========infinite slider============== */
+.slider-event{
+    position: relative;
+    overflow: hidden;
+}
+.slide{
+    position: relative;
+    display: flex;
+    align-items: center;
+    animation: slide-right 30s linear infinite;
+}
+.slide-card{
+    text-align: center;
+    height: 200px;
+    transition: 0.5s ease-in-out;
+    padding: 50px 70px;
+}
+.slide-card img{
+    height: 100%;
+    padding-bottom: 15px;
+    /* opacity: 0.8; */
+    filter: grayscale(100%);
+    transition: 0.5s ease-in-out;
+}
+@keyframes slide-right {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -280%; 
+    }
+}
+.slide:hover{
+    animation-play-state: paused;
+}
+.slide-card:hover{
+    transform: scale(1.1);
+}
+.slide-card:hover img{    
+    filter: grayscale(0%);
+}
+
+
+/* ======================About Section========================= */
+.about_card{
+    background: #d9e8ff;    
+    border: 0.5px solid #8cbaff;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about_card img{
+    height: 200px;
+    text-align: center;
+    width: auto;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+.about_card p{
+    margin: 0;
+}
+
+
+
+
+/* ==================event section====================== */
+.search_section{
+    background:#cce0ff;
+}
+
+.event-card{
+    position: relative;
+    padding: 40px 20px;
+    margin: 0;
+    transition: 0.5s ease-in-out;
+    margin-bottom: 10px;
+    background: #eef6ff;
+    margin: 6px;
+}
+.event-card span{
+    color:#003686;
+    font-size: 12px;
+    display: block;
+    padding-bottom: 10px;
+}
+.event-card p{
+    color: rgb(164, 164, 164);
+    transition: 0.5s ease-in-out;
+}
+.event-card h6{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.event-card::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background: #0d6efd;
+    transition: 1s ease-in-out;
+}
+.event-card:hover{
+    background: #c2deff;
+}
+.event-card:hover::after {    
+    width: 100%;
+}
+.event-card:hover p {    
+    color: black;
+}
+
+
+
+
+
+/* ============Account section=============== */
+.account_head{
+    background:#cce0ff;
+}
+.side_card{
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    background:#cce0ff;
+    border: 0.5px solid #94bfff;
+}
+.side_card p{
+    text-align: justify;
+}
+
+
+
+/* ==================admin head================ */
+.admin_head{    
+    background:#0dfda137;
+}
+.admin_card{
+    position: relative;
+    padding: 25px 20px;
+    margin: 0;
+    transition: 0.5s ease-in-out;
+    margin-bottom: 10px;
+    background: #0dfd654a;
+    cursor: pointer;
+}
+.admin_card span{
+    color: black;
+    font-size: 12px;
+}
+.admin_card p{
+    color: rgb(164, 164, 164);
+    transition: 0.5s ease-in-out;
+}
+
+.admin_card h4{
+    color: black;
+}
+.admin_card h6{
+    color: black;
+    margin-bottom: 15px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.admin_card h5{
+    color: #00c700;
+}
+.admin_card::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background: #0dfd65;
+    transition: 1s ease-in-out;
+}
+.admin_card:hover{
+    background:#0dfd6576
+}
+.admin_card:hover::after {    
+    width: 100%;
+}
+.admin_card:hover p {    
+    color: rgb(99, 99, 99);
+}
+
+/* =========================edit event================== */
+.Edit_event p{
+    color: #0d6efd;
+    margin: 0;
+}
+
+
+/* =============comment card in edit event=================== */
+.comment_card{
+    border-top: 0.5px solid #c9ccd6;
+    padding: 5px 0;
+}
+.comment_card:last-child{
+    border-bottom: 0.5px solid #c9ccd6;
+}
